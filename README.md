@@ -19,3 +19,6 @@ A Java EE 8 Quick APIs Reference covering the essential APIs in Java EE 8:
 * Chapter 16 Java Persistence API (JPA) 2.2 
 * Chapter 17 Bean Validation 2.0
 * Chapter 18 Java EE Security API 1.0
+
+
+To deploy `mvn package cargo:run`

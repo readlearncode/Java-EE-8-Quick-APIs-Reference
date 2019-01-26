@@ -12,10 +12,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
-        <java.version>1.8</java.version>
+        <maven-war-plugin.version>3.2.0</maven-war-plugin.version>
         <javaee-api.version>8.0</javaee-api.version>
         <junit.version>4.12</junit.version>
         <assertj-core.version>3.8.0</assertj-core.version>
+        <java.version>1.8</java.version>
+        <cargo-maven2-plugin.version>1.6.11</cargo-maven2-plugin.version>
     </properties>
 
 
@@ -51,5 +53,6 @@
     </modules>
 
 
+    <!-- mvn package cargo:run -f path/to/pom -->
 
 </project>
