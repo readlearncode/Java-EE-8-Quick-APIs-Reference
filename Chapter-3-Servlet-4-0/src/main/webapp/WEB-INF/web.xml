@@ -34,4 +34,14 @@
         <url-pattern>/request-parameters</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Request Headers</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.RequestHeaders</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Request Headers</servlet-name>
+        <url-pattern>/request-headers</url-pattern>
+    </servlet-mapping>
+
 </web-app>
