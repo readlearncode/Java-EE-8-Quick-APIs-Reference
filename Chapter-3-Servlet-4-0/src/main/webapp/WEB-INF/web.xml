@@ -55,33 +55,53 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>CreateCookies</servlet-name>
+        <servlet-name>Create Cookies</servlet-name>
         <servlet-class>com.readlearncode.serlvet.request.CreateCookies</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>CreateCookies</servlet-name>
+        <servlet-name>Create Cookies</servlet-name>
         <url-pattern>/create-cookies</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>ReadCookies</servlet-name>
+        <servlet-name>Read Cookies</servlet-name>
         <servlet-class>com.readlearncode.serlvet.request.ReadCookies</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>ReadCookies</servlet-name>
+        <servlet-name>Read Cookies</servlet-name>
         <url-pattern>/read-cookies</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>ServletMapping</servlet-name>
+        <servlet-name>Servlet Mapping</servlet-name>
         <servlet-class>com.readlearncode.serlvet.request.ServletMapping</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>ServletMapping</servlet-name>
+        <servlet-name>Servlet Mapping</servlet-name>
         <url-pattern>/servlet-mapping</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Response Buffering</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.response.ResponseBuffering</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Response Buffering</servlet-name>
+        <url-pattern>/response-buffering</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Response Headers</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.response.ResponseHeaders</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Response Headers</servlet-name>
+        <url-pattern>/response-headers</url-pattern>
     </servlet-mapping>
 
 </web-app>
