@@ -15,17 +15,12 @@ import java.io.IOException;
 public class ServletMapping extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
         HttpServletMapping servletMapping = request.getHttpServletMapping();
         response.getWriter()
-                .append("<html><body>")
-                .append("Mapping Matched: ").append(servletMapping.getMappingMatch().name())
-                .append("<br/>")
-                .append("Value Matched: ").append(servletMapping.getMatchValue())
-                .append("<br/>")
-                .append("Servlet Name: ").append(servletMapping.getServletName())
-                .append("<br/>")
-                .append("Pattern Used: ").append(servletMapping.getPattern())
-                .append("<br/>")
-                .append("</body></html>");
+                .append("\nMapping Matched: ").append(servletMapping.getMappingMatch().name())
+                .append("\nValue Matched: ").append(servletMapping.getMatchValue())
+                .append("\nServlet Name: ").append(servletMapping.getServletName())
+                .append("\nPattern Used: ").append(servletMapping.getPattern());
     }
 }
