@@ -104,4 +104,24 @@
         <url-pattern>/response-headers</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Trailer Fields</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.response.TrailerFields</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Trailer Fields</servlet-name>
+        <url-pattern>/trailer-fields</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Read Trailer Fields</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.response.ReadTrailerFields</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Read Trailer Fields</servlet-name>
+        <url-pattern>/read-trailer-fields</url-pattern>
+    </servlet-mapping>
+
 </web-app>
