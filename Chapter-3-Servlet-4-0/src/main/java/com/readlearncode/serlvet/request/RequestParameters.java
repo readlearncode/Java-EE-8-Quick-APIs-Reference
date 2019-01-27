@@ -1,4 +1,4 @@
-package com.readlearncode.serlvet;
+package com.readlearncode.serlvet.request;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

@@ -16,7 +16,7 @@
 
     <servlet>
         <servlet-name>Request Handling Methods</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.RequestHandlingMethods</servlet-class>
+        <servlet-class>com.readlearncode.serlvet.request.RequestHandlingMethods</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -26,7 +26,7 @@
 
     <servlet>
         <servlet-name>Request Parameters</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.RequestParameters</servlet-class>
+        <servlet-class>com.readlearncode.serlvet.request.RequestParameters</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -36,12 +36,52 @@
 
     <servlet>
         <servlet-name>Request Headers</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.RequestHeaders</servlet-class>
+        <servlet-class>com.readlearncode.serlvet.request.RequestHeaders</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>Request Headers</servlet-name>
         <url-pattern>/request-headers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Request Path</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.request.RequestPath</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Request Path</servlet-name>
+        <url-pattern>/request-path/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateCookies</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.request.CreateCookies</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateCookies</servlet-name>
+        <url-pattern>/create-cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReadCookies</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.request.ReadCookies</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReadCookies</servlet-name>
+        <url-pattern>/read-cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletMapping</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.request.ServletMapping</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletMapping</servlet-name>
+        <url-pattern>/servlet-mapping</url-pattern>
     </servlet-mapping>
 
 </web-app>
