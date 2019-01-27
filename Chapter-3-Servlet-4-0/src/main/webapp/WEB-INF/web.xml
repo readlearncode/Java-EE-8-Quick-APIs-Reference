@@ -124,4 +124,36 @@
         <url-pattern>/read-trailer-fields</url-pattern>
     </servlet-mapping>
 
+
+
+    <servlet>
+        <servlet-name>Send Error Code</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.response.conveniencemethods.SendErrorCode</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Send Error Code</servlet-name>
+        <url-pattern>/send-error-code</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Send Error Code And Message</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.response.conveniencemethods.SendErrorCodeAndMessage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Send Error Code And Message</servlet-name>
+        <url-pattern>/send-error-code-and-message</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Send Redirect</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.response.conveniencemethods.SendRedirect</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Send Redirect</servlet-name>
+        <url-pattern>/send-redirect</url-pattern>
+    </servlet-mapping>
+
 </web-app>
