@@ -1,5 +1,6 @@
 package com.readlearncode.serlvet.request;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,7 +18,9 @@ import static java.util.stream.Collectors.joining;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
+@WebServlet("/request-parameters")
 public class RequestParameters extends HttpServlet {
+
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 

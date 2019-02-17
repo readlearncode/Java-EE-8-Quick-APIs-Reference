@@ -22,25 +22,10 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>Request Parameters</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.request.RequestParameters</servlet-class>
-    </servlet>
 
-    <servlet-mapping>
-        <servlet-name>Request Parameters</servlet-name>
-        <url-pattern>/request-parameters</url-pattern>
-    </servlet-mapping>
 
-    <servlet>
-        <servlet-name>Request Headers</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.request.RequestHeaders</servlet-class>
-    </servlet>
 
-    <servlet-mapping>
-        <servlet-name>Request Headers</servlet-name>
-        <url-pattern>/request-headers</url-pattern>
-    </servlet-mapping>
+
 
     <servlet>
         <servlet-name>Request Path</servlet-name>
