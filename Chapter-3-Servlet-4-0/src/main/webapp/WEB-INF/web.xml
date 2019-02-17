@@ -25,18 +25,6 @@
 
 
 
-
-
-    <servlet>
-        <servlet-name>Request Path</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.request.RequestPath</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Request Path</servlet-name>
-        <url-pattern>/request-path/*</url-pattern>
-    </servlet-mapping>
-
     <servlet>
         <servlet-name>Create Cookies</servlet-name>
         <servlet-class>com.readlearncode.serlvet.request.CreateCookies</servlet-class>
