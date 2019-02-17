@@ -1,6 +1,7 @@
 package com.readlearncode.serlvet.request;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,6 +14,7 @@ import java.io.IOException;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
+@WebServlet("/create-cookies")
 public class CreateCookies extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

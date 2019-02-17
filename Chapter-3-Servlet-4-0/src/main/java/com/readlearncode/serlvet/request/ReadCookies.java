@@ -1,5 +1,6 @@
 package com.readlearncode.serlvet.request;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,6 +15,7 @@ import java.util.stream.Stream;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
+@WebServlet("/read-cookies")
 public class ReadCookies extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -22,6 +24,7 @@ public class ReadCookies extends HttpServlet {
         Cookie[] cookies = request.getCookies();
         Stream.of(cookies).forEach(
                 cookie -> writer
+                        .append("Value: " + cookie.getName())
                         .append("Value: " + cookie.getValue())
                         .append("\nMaxAge: " + cookie.getMaxAge())
                         .append("\nComment: " + cookie.getComment())
