@@ -1,5 +1,6 @@
 package com.readlearncode.serlvet.request;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletMapping;
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,7 @@ import java.io.IOException;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
+@WebServlet("/servlet-mapping")
 public class ServletMapping extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

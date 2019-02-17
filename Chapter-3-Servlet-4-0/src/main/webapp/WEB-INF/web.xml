@@ -25,15 +25,7 @@
 
 
 
-    <servlet>
-        <servlet-name>Servlet Mapping</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.request.ServletMapping</servlet-class>
-    </servlet>
 
-    <servlet-mapping>
-        <servlet-name>Servlet Mapping</servlet-name>
-        <url-pattern>/servlet-mapping</url-pattern>
-    </servlet-mapping>
 
     <servlet>
         <servlet-name>Response Buffering</servlet-name>
