@@ -4,6 +4,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
+    <locale-encoding-mapping-list>
+        <locale-encoding-mapping>
+            <locale>es_ES</locale>
+            <encoding>UTF-8</encoding>
+        </locale-encoding-mapping>
+    </locale-encoding-mapping-list>
+
+
     <servlet>
         <servlet-name>Hello World</servlet-name>
         <servlet-class>com.readlearncode.serlvet.HelloWorld</servlet-class>
@@ -12,16 +20,6 @@
     <servlet-mapping>
         <servlet-name>Hello World</servlet-name>
         <url-pattern>/</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Request Handling Methods</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.request.RequestHandlingMethods</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Request Handling Methods</servlet-name>
-        <url-pattern>/request-handling-methods</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -124,8 +122,6 @@
         <url-pattern>/read-trailer-fields</url-pattern>
     </servlet-mapping>
 
-
-
     <servlet>
         <servlet-name>Send Error Code</servlet-name>
         <servlet-class>com.readlearncode.serlvet.response.conveniencemethods.SendErrorCode</servlet-class>
@@ -154,6 +150,59 @@
     <servlet-mapping>
         <servlet-name>Send Redirect</servlet-name>
         <url-pattern>/send-redirect</url-pattern>
+    </servlet-mapping>
+
+    <!-- Filters -->
+    <servlet>
+        <servlet-name>Servlet Example 1</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.filter.ServletExample1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet Example 1</servlet-name>
+        <url-pattern>/filter-example-1</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>Filter Example 1</filter-name>
+        <filter-class>com.readlearncode.serlvet.filter.FilterExample1</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>Filter Example 1</filter-name>
+        <servlet-name>Servlet Example 1</servlet-name>
+    </filter-mapping>
+
+
+    <servlet>
+        <servlet-name>Servlet Example 2</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.filter.ServletExample2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet Example 2</servlet-name>
+        <url-pattern>/filter-example-2</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>Filter Example 2</filter-name>
+        <filter-class>com.readlearncode.serlvet.filter.FilterExample2</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>Filter Example 2</filter-name>
+        <servlet-name>Servlet Example 2</servlet-name>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>1st Servlet Example 2</servlet-name>
+        <servlet-class>com.readlearncode.serlvet.filter.FirstServletExample2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>1st Servlet Example 2</servlet-name>
+        <url-pattern>/1st-filter-example-2</url-pattern>
     </servlet-mapping>
 
 </web-app>
