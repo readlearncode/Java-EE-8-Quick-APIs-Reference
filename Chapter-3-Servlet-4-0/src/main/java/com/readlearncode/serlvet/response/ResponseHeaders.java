@@ -1,10 +1,9 @@
 package com.readlearncode.serlvet.response;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * Source code github.com/readlearncode
@@ -12,10 +11,10 @@ import java.io.PrintWriter;
  * @author Alex Theedom www.readlearncode.com
  * @version 1.0
  */
+@WebServlet("/response-headers")
 public class ResponseHeaders extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        PrintWriter writer = response.getWriter();
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
 
         response.setHeader("x-supported-counties", "UK");
         response.addHeader("x-supported-counties", "US");

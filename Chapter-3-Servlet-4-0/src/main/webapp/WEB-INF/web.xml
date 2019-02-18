@@ -37,15 +37,6 @@
         <url-pattern>/response-buffering</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>Response Headers</servlet-name>
-        <servlet-class>com.readlearncode.serlvet.response.ResponseHeaders</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Response Headers</servlet-name>
-        <url-pattern>/response-headers</url-pattern>
-    </servlet-mapping>
 
     <servlet>
         <servlet-name>Trailer Fields</servlet-name>
