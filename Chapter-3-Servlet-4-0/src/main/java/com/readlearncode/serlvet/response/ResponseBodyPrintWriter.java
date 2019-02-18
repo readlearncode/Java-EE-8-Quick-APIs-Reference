@@ -24,7 +24,7 @@ public class ResponseBodyPrintWriter extends HttpServlet {
 
         writer.append("----------------------<br>");
 
-        writer.format("Format a String: %s" , "This is a String value");
+        writer.format("Format: %s" , "This is a String");
     }
 
 }
