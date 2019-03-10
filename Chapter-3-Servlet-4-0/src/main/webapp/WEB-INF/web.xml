@@ -17,6 +17,22 @@
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
 
+
+    <error-page>
+        <error-code>401</error-code>
+        <location>/401.html</location>
+    </error-page>
+
+    <error-page>
+        <error-code>503</error-code>
+        <location>/503.jsp</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.io.IOException</exception-type>
+        <location>/exception.html</location>
+    </error-page>
+
     <!-- Hello World Servlet -->
     <servlet>
         <servlet-name>Hello World</servlet-name>
@@ -27,9 +43,6 @@
         <servlet-name>Hello World</servlet-name>
         <url-pattern>/hello-world</url-pattern>
     </servlet-mapping>
-
-
-
 
 
     <servlet>
