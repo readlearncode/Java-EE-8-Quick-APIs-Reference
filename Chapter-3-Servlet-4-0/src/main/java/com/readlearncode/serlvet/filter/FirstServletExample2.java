@@ -14,13 +14,9 @@ import java.io.IOException;
  */
 public class FirstServletExample2 extends HttpServlet {
 
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         System.out.println("Reached 1st Servlet");
-
         request.getRequestDispatcher("filter-example-2").forward(request, response);
-
     }
 
 }

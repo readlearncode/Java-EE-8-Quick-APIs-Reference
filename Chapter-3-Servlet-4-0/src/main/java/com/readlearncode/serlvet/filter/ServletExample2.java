@@ -12,11 +12,8 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ServletExample2 extends HttpServlet {
 
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-
         System.out.println("Reached 2nd Servlet");
-
     }
 
 }
